@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1620273617">
+  <File Type="ROUTE-PWR" Name="bzz3top_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="bzz3top.tcl"/>
+  <File Type="BITSTR-BMM" Name="bzz3top_bd.bmm"/>
+  <File Type="ROUTE-PWR-SUM" Name="bzz3top_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="bzz3top_reports.tcl"/>
+  <File Type="OPT-DCP" Name="bzz3top_opt.dcp"/>
+  <File Type="OPT-DRC" Name="bzz3top_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="bzz3top.hwdef"/>
+  <File Type="PWROPT-DCP" Name="bzz3top_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="bzz3top_placed.dcp"/>
+  <File Type="PLACE-IO" Name="bzz3top_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="bzz3top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="bzz3top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="bzz3top_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="bzz3top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="bzz3top.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="bzz3top_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="bzz3top.bin"/>
+  <File Type="PHYSOPT-DCP" Name="bzz3top_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="bzz3top.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="bzz3top_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="bzz3top_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="bzz3top_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="bzz3top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="bzz3top_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="bzz3top_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="bzz3top.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="bzz3top_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="bzz3top.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="bzz3top_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="bzz3top_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="bzz3top.sysdef"/>
+  <File Type="ROUTE-PWR-RPX" Name="bzz3top_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="bzz3top_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="bzz3top_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="bzz3top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="bzz3top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="bzz3top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="bzz3top_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="bzz3top_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="bzz3top_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="bzz3top_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="bzz3top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="bzz3top_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="bzz3top.bit"/>
+  <File Type="BITSTR-RBT" Name="bzz3top.rbt"/>
+  <File Type="BITSTR-NKY" Name="bzz3top.nky"/>
+  <File Type="BG-DRC" Name="bzz3top.drc"/>
+  <File Type="RDI-RDI" Name="bzz3top.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/final-proj-bzz3/clock_div.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../clock_div.vhd"/>
+        <Attr Name="ImportTime" Val="1616789951"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/doubledabble.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/doubledabblerev.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gcd.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/gcd_div.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/receiver.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/transmitter.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/final-proj-bzz3/uart.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../uart.vhd"/>
+        <Attr Name="ImportTime" Val="1616626704"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/final-proj-bzz3/uart_rx.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../uart_rx.vhd"/>
+        <Attr Name="ImportTime" Val="1616626707"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/final-proj-bzz3/uart_tx.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../uart_tx.vhd"/>
+        <Attr Name="ImportTime" Val="1616794104"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/bzz3top.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PmodOLED_Source/OledInit.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../oledtest/oledtest/oledtest.srcs/sources_1/imports/PmodOLED_Source/OledInit.vhd"/>
+        <Attr Name="ImportTime" Val="1320094512"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PmodOLED_Source/PmodOLEDCtrl.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../oledtest/oledtest/oledtest.srcs/sources_1/imports/PmodOLED_Source/PmodOLEDCtrl.vhd"/>
+        <Attr Name="ImportTime" Val="1320093986"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PmodOLED_Source/SpiCtrl.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../oledtest/oledtest/oledtest.srcs/sources_1/imports/PmodOLED_Source/SpiCtrl.vhd"/>
+        <Attr Name="ImportTime" Val="1320090268"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PmodOLED_Source/Delay.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../oledtest/oledtest/oledtest.srcs/sources_1/imports/PmodOLED_Source/Delay.vhd"/>
+        <Attr Name="ImportTime" Val="1319782302"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/PmodOLED_Source/OledExample.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../oledtest/oledtest/oledtest.srcs/sources_1/imports/PmodOLED_Source/OledExample.vhd"/>
+        <Attr Name="ImportTime" Val="1620244387"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../charLib.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="bzz3top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/final-proj-bzz3/Z7_7010_7020.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Z7_7010_7020.xdc"/>
+        <Attr Name="ImportTime" Val="1614208381"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

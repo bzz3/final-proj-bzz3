@@ -1,0 +1,704 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu May  6 00:00:19 2021
+# Process ID: 2732
+# Current directory: D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.runs/synth_1
+# Command line: vivado.exe -log bzz3top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bzz3top.tcl
+# Log file: D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.runs/synth_1/bzz3top.vds
+# Journal file: D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/Users/bryan/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
+source bzz3top.tcl -notrace
+WARNING: [Board 49-91] Board repository path '{C:Xilinxivado-boards-master/new/board_files}' does not exist, it will not be used to search board files.
+Command: synth_design -top bzz3top -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22496 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 416.430 ; gain = 97.242
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'bzz3top' [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/bzz3top.vhd:43]
+INFO: [Synth 8-3491] module 'clock_div' declared at 'D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/imports/final-proj-bzz3/clock_div.vhd:34' bound to instance 'clk_divider' of component 'clock_div' [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/bzz3top.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'clock_div' [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/imports/final-proj-bzz3/clock_div.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'clock_div' (1#1) [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/imports/final-proj-bzz3/clock_div.vhd:39]
+INFO: [Synth 8-3491] module 'uart' declared at 'D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/imports/final-proj-bzz3/uart.vhd:10' bound to instance 'uart_m' of component 'uart' [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/bzz3top.vhd:135]
+INFO: [Synth 8-638] synthesizing module 'uart' [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/imports/final-proj-bzz3/uart.vhd:21]
+INFO: [Synth 8-3491] module 'uart_rx' declared at 'D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/imports/final-proj-bzz3/uart_rx.vhd:12' bound to instance 'r_x' of component 'uart_rx' [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/imports/final-proj-bzz3/uart.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/imports/final-proj-bzz3/uart_rx.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (2#1) [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/imports/final-proj-bzz3/uart_rx.vhd:20]
+INFO: [Synth 8-3491] module 'uart_tx' declared at 'D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/imports/final-proj-bzz3/uart_tx.vhd:34' bound to instance 't_x' of component 'uart_tx' [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/imports/final-proj-bzz3/uart.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/imports/final-proj-bzz3/uart_tx.vhd:45]
+INFO: [Synth 8-226] default block is never used [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/imports/final-proj-bzz3/uart_tx.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (3#1) [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/imports/final-proj-bzz3/uart_tx.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'uart' (4#1) [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/imports/final-proj-bzz3/uart.vhd:21]
+INFO: [Synth 8-3491] module 'receiver' declared at 'D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/receiver.vhd:34' bound to instance 'rx' of component 'receiver' [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/bzz3top.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'receiver' [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/receiver.vhd:46]
+INFO: [Synth 8-226] default block is never used [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/receiver.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'receiver' (5#1) [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/receiver.vhd:46]
+INFO: [Synth 8-3491] module 'doubledabblerev' declared at 'D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/doubledabblerev.vhd:34' bound to instance 'ddr' of component 'doubledabblerev' [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/bzz3top.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'doubledabblerev' [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/doubledabblerev.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'doubledabblerev' (6#1) [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/doubledabblerev.vhd:44]
+INFO: [Synth 8-3491] module 'gcd_div' declared at 'D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/gcd_div.vhd:34' bound to instance 'gcd_d' of component 'gcd_div' [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/bzz3top.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'gcd_div' [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/gcd_div.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'gcd_div' (7#1) [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/gcd_div.vhd:43]
+INFO: [Synth 8-3491] module 'gcd' declared at 'D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/gcd.vhd:34' bound to instance 'gcd_m' of component 'gcd' [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/bzz3top.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'gcd' [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/gcd.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'gcd' (8#1) [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/gcd.vhd:42]
+INFO: [Synth 8-3491] module 'doubledabble' declared at 'D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/doubledabble.vhd:34' bound to instance 'dd' of component 'doubledabble' [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/bzz3top.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'doubledabble' [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/doubledabble.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'doubledabble' (9#1) [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/doubledabble.vhd:44]
+INFO: [Synth 8-3491] module 'transmitter' declared at 'D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/transmitter.vhd:34' bound to instance 'tx' of component 'transmitter' [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/bzz3top.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'transmitter' [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/transmitter.vhd:47]
+INFO: [Synth 8-226] default block is never used [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/transmitter.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'transmitter' (10#1) [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/transmitter.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'bzz3top' (11#1) [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/bzz3top.vhd:43]
+WARNING: [Synth 8-3331] design receiver has unconnected port char[7]
+WARNING: [Synth 8-3331] design receiver has unconnected port char[6]
+WARNING: [Synth 8-3331] design receiver has unconnected port char[5]
+WARNING: [Synth 8-3331] design receiver has unconnected port char[4]
+WARNING: [Synth 8-3331] design bzz3top has unconnected port RTS
+WARNING: [Synth 8-3331] design bzz3top has unconnected port CTS
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 471.363 ; gain = 152.176
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 471.363 ; gain = 152.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 471.363 ; gain = 152.176
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/constrs_1/imports/final-proj-bzz3/Z7_7010_7020.xdc]
+Finished Parsing XDC File [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/constrs_1/imports/final-proj-bzz3/Z7_7010_7020.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/constrs_1/imports/final-proj-bzz3/Z7_7010_7020.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bzz3top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bzz3top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 814.305 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 814.305 ; gain = 495.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 814.305 ; gain = 495.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 814.305 ; gain = 495.117
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'curr_reg' in module 'uart_rx'
+INFO: [Synth 8-5544] ROM "curr" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'bcd1_reg[3:0]' into 'bcd0_reg[3:0]' [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/receiver.vhd:61]
+INFO: [Synth 8-4471] merging register 'bcd2_reg[3:0]' into 'bcd0_reg[3:0]' [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/receiver.vhd:62]
+WARNING: [Synth 8-6014] Unused sequential element bcd1_reg was removed.  [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/receiver.vhd:61]
+WARNING: [Synth 8-6014] Unused sequential element bcd2_reg was removed.  [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/new/receiver.vhd:62]
+INFO: [Synth 8-802] inferred FSM for state register 'curr_reg' in module 'receiver'
+INFO: [Synth 8-5544] ROM "curr" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ready" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'curr_reg' in module 'transmitter'
+INFO: [Synth 8-5544] ROM "curr" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+                   start |                              010 |                               01
+                    data |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_reg' using encoding 'one-hot' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                   busya |                               01 |                               01
+                   busyb |                               10 |                               10
+                   busyc |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_reg' using encoding 'sequential' in module 'receiver'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                   busya |                               01 |                               01
+                   busyb |                               10 |                               10
+                   busyc |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_reg' using encoding 'sequential' in module 'transmitter'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 814.305 ; gain = 495.117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 6     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               20 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 14    
+	                4 Bit    Registers := 14    
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 5     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 23    
+	   4 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clock_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 4     
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+Module receiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 3     
+Module doubledabblerev 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 1     
+Module gcd_div 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
+Module gcd 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 5     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 6     
+Module doubledabble 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 7     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module transmitter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3936] Found unconnected internal register 'uart_m/r_x/char_reg' and it is trimmed from '8' to '4' bits. [D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.srcs/sources_1/imports/final-proj-bzz3/uart_rx.vhd:96]
+INFO: [Synth 8-5546] ROM "gcd_m/ready" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design bzz3top has unconnected port RTS
+WARNING: [Synth 8-3331] design bzz3top has unconnected port CTS
+INFO: [Synth 8-3886] merging instance 'ddr/bin_reg[6]' (FDRE) to 'ddr/bin_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ddr/bin_reg[7]' (FDRE) to 'ddr/bin_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ddr/bin_reg[0]' (FDRE) to 'ddr/bin_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ddr/bin_reg[1]' (FDRE) to 'ddr/bin_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ddr/bin_reg[2]' (FDRE) to 'ddr/bin_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ddr/bin_reg[3]' (FDRE) to 'ddr/bin_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ddr/bin_reg[4]' (FDRE) to 'ddr/bin_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr/bin_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rx/bcd0_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rx/bcd0_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rx/bcd0_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rx/bcd0_reg[2] )
+INFO: [Synth 8-3886] merging instance 'ddr/binary_reg[6]' (FDE) to 'ddr/binary_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ddr/binary_reg[7]' (FDE) to 'ddr/binary_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ddr/binary_reg[0]' (FDE) to 'ddr/binary_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ddr/binary_reg[1]' (FDE) to 'ddr/binary_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ddr/binary_reg[2]' (FDE) to 'ddr/binary_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ddr/binary_reg[3]' (FDE) to 'ddr/binary_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ddr/binary_reg[4]' (FDE) to 'ddr/binary_reg[5]'
+INFO: [Synth 8-3886] merging instance 'gcd_d/a_reg[6]' (FDE) to 'gcd_d/a_reg[7]'
+INFO: [Synth 8-3886] merging instance 'gcd_m/a_reg_reg[7]' (FDE) to 'gcd_m/a_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'gcd_d/a_reg[7]' (FDE) to 'gcd_d/a_reg[5]'
+INFO: [Synth 8-3886] merging instance 'gcd_d/a_reg[0]' (FDE) to 'gcd_d/a_reg[5]'
+INFO: [Synth 8-3886] merging instance 'gcd_d/a_reg[1]' (FDE) to 'gcd_d/a_reg[5]'
+INFO: [Synth 8-3886] merging instance 'gcd_d/a_reg[2]' (FDE) to 'gcd_d/a_reg[5]'
+INFO: [Synth 8-3886] merging instance 'gcd_d/a_reg[3]' (FDE) to 'gcd_d/a_reg[5]'
+INFO: [Synth 8-3886] merging instance 'gcd_d/a_reg[4]' (FDE) to 'gcd_d/a_reg[5]'
+INFO: [Synth 8-3886] merging instance 'gcd_m/a_reg_reg[5]' (FDE) to 'gcd_m/a_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gcd_d/b_reg[6]' (FDE) to 'gcd_d/b_reg[7]'
+INFO: [Synth 8-3886] merging instance 'gcd_m/b_reg_reg[7]' (FDE) to 'gcd_m/b_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'gcd_d/b_reg[7]' (FDE) to 'gcd_d/b_reg[5]'
+INFO: [Synth 8-3886] merging instance 'gcd_d/b_reg[0]' (FDE) to 'gcd_d/b_reg[5]'
+INFO: [Synth 8-3886] merging instance 'gcd_d/b_reg[1]' (FDE) to 'gcd_d/b_reg[5]'
+INFO: [Synth 8-3886] merging instance 'gcd_d/b_reg[2]' (FDE) to 'gcd_d/b_reg[5]'
+INFO: [Synth 8-3886] merging instance 'gcd_d/b_reg[3]' (FDE) to 'gcd_d/b_reg[5]'
+INFO: [Synth 8-3886] merging instance 'gcd_d/b_reg[4]' (FDE) to 'gcd_d/b_reg[5]'
+INFO: [Synth 8-3886] merging instance 'gcd_m/b_reg_reg[5]' (FDE) to 'gcd_m/b_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'tx/char_reg[7]' (FDRE) to 'tx/char_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tx/char_reg[6] )
+INFO: [Synth 8-3886] merging instance 'tx/char_reg[5]' (FDRE) to 'tx/char_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr/shift_reg_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr/binary_reg[5] )
+INFO: [Synth 8-3886] merging instance 'gcd_m/a_reg_reg[6]' (FDE) to 'gcd_m/a_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gcd_m/a_reg_reg[1]' (FDE) to 'gcd_m/a_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gcd_m/a_reg_reg[2]' (FDE) to 'gcd_m/a_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gcd_m/a_reg_reg[3]' (FDE) to 'gcd_m/a_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gcd_m/a_reg_reg[4]' (FDE) to 'gcd_m/a_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gcd_m/b_reg_reg[6]' (FDE) to 'gcd_m/b_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gcd_m/b_reg_reg[1]' (FDE) to 'gcd_m/b_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gcd_m/b_reg_reg[2]' (FDE) to 'gcd_m/b_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gcd_m/b_reg_reg[3]' (FDE) to 'gcd_m/b_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gcd_m/b_reg_reg[4]' (FDE) to 'gcd_m/b_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gcd_m/dividend_reg[0]' (FDE) to 'gcd_m/dividend_reg[5]'
+INFO: [Synth 8-3886] merging instance 'gcd_m/dividend_reg[6]' (FDE) to 'gcd_m/dividend_reg[7]'
+INFO: [Synth 8-3886] merging instance 'uart_m/t_x/charReg_reg[5]' (FDRE) to 'uart_m/t_x/charReg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ddr/shift_reg_reg[19]' (FDE) to 'ddr/shift_reg_reg[18]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ddr/shift_reg_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gcd_d/a_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gcd_d/b_reg[5] )
+INFO: [Synth 8-3886] merging instance 'gcd_m/dividend_reg[1]' (FDE) to 'gcd_m/dividend_reg[2]'
+INFO: [Synth 8-3886] merging instance 'gcd_m/dividend_reg[2]' (FDE) to 'gcd_m/dividend_reg[3]'
+INFO: [Synth 8-3886] merging instance 'gcd_m/dividend_reg[3]' (FDE) to 'gcd_m/dividend_reg[4]'
+INFO: [Synth 8-3886] merging instance 'gcd_m/dividend_reg[4]' (FDE) to 'gcd_m/dividend_reg[5]'
+INFO: [Synth 8-3886] merging instance 'gcd_m/dividend_reg[5]' (FDE) to 'gcd_m/dividend_reg[7]'
+INFO: [Synth 8-3886] merging instance 'gcd_m/a_reg_reg[0]' (FDE) to 'gcd_m/b_reg_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gcd_m/b_reg_reg[0] )
+INFO: [Synth 8-3886] merging instance 'gcd_m/b_reg_reg[0]' (FDE) to 'gcd_m/dividend_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gcd_m/dividend_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\gcd_m/ready_reg )
+WARNING: [Synth 8-3332] Sequential element (ddr/bin_reg[5]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/binary_reg[5]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (gcd_d/b_reg[5]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (gcd_d/a_reg[5]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (tx/char_reg[6]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (uart_m/t_x/charReg_reg[7]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (uart_m/t_x/charReg_reg[6]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (rx/ready_reg) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (uart_m/r_x/d_reg[7]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (uart_m/r_x/d_reg[6]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (uart_m/r_x/d_reg[5]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (uart_m/r_x/d_reg[4]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (uart_m/r_x/d_reg[3]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (uart_m/r_x/d_reg[2]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (uart_m/r_x/d_reg[1]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (uart_m/r_x/d_reg[0]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (uart_m/r_x/char_reg[3]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (uart_m/r_x/char_reg[2]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (uart_m/r_x/char_reg[1]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (uart_m/r_x/char_reg[0]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (rx/bcd0_reg[3]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (rx/bcd0_reg[2]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (rx/bcd0_reg[1]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (rx/bcd0_reg[0]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/shift_reg_reg[18]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/shift_reg_reg[17]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/shift_reg_reg[16]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/shift_reg_reg[15]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/shift_reg_reg[14]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/shift_reg_reg[13]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/shift_reg_reg[12]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/shift_reg_reg[11]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/shift_reg_reg[10]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/shift_reg_reg[9]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/shift_reg_reg[8]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/shift_reg_reg[7]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/shift_reg_reg[6]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/shift_reg_reg[5]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/shift_reg_reg[4]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/shift_reg_reg[3]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/shift_reg_reg[2]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/shift_reg_reg[1]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/shift_reg_reg[0]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/bcd_ten_reg[3]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/bcd_ten_reg[2]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/bcd_ten_reg[1]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/bcd_ten_reg[0]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/bcd_hun_reg[3]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/bcd_hun_reg[2]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/bcd_hun_reg[1]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/bcd_hun_reg[0]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/bcd_one_reg[3]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/bcd_one_reg[2]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/bcd_one_reg[1]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/bcd_one_reg[0]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (ddr/ready_reg) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (gcd_d/ready_rise_reg) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (gcd_d/a_or_b_reg) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (gcd_m/ready_reg) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (gcd_m/dividend_reg[7]) is unused and will be removed from module bzz3top.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gcd_m/gcd_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/bin_reg[7] )
+INFO: [Synth 8-3886] merging instance 'gcd_m/gcd_reg[7]' (FDE) to 'gcd_m/gcd_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gcd_m/gcd_reg[6] )
+INFO: [Synth 8-3886] merging instance 'dd/bin_reg[6]' (FDE) to 'dd/bin_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/bin_reg[7] )
+INFO: [Synth 8-3886] merging instance 'gcd_m/gcd_reg[6]' (FDE) to 'gcd_m/gcd_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gcd_m/gcd_reg[5] )
+INFO: [Synth 8-3886] merging instance 'dd/bin_reg[5]' (FDE) to 'dd/bin_reg[7]'
+INFO: [Synth 8-3886] merging instance 'gcd_m/gcd_reg[4]' (FDE) to 'gcd_m/gcd_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gcd_m/gcd_reg[5]' (FDE) to 'gcd_m/gcd_reg[0]'
+INFO: [Synth 8-3886] merging instance 'dd/bin_reg[4]' (FDE) to 'dd/bin_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/bin_reg[7] )
+INFO: [Synth 8-3886] merging instance 'gcd_m/gcd_reg[3]' (FDE) to 'gcd_m/gcd_reg[0]'
+INFO: [Synth 8-3886] merging instance 'dd/bin_reg[3]' (FDE) to 'dd/bin_reg[0]'
+INFO: [Synth 8-3886] merging instance 'gcd_m/gcd_reg[0]' (FDE) to 'gcd_m/gcd_reg[1]'
+INFO: [Synth 8-3886] merging instance 'dd/bin_reg[0]' (FDE) to 'dd/bin_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gcd_m/gcd_reg[1]' (FDE) to 'gcd_m/gcd_reg[2]'
+INFO: [Synth 8-3886] merging instance 'dd/bin_reg[1]' (FDE) to 'dd/bin_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gcd_m/gcd_reg[2] )
+INFO: [Synth 8-3886] merging instance 'dd/bin_reg[2]' (FDE) to 'dd/bin_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/shift_reg_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/bin_reg[7] )
+INFO: [Synth 8-3886] merging instance 'dd/shift_reg_reg[0]' (FDE) to 'dd/shift_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/shift_reg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'dd/shift_reg_reg[1]' (FDE) to 'dd/shift_reg_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/shift_reg_reg[2] )
+INFO: [Synth 8-3886] merging instance 'dd/shift_reg_reg[2]' (FDE) to 'dd/shift_reg_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/shift_reg_reg[3] )
+INFO: [Synth 8-3886] merging instance 'dd/shift_reg_reg[3]' (FDE) to 'dd/shift_reg_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/shift_reg_reg[4] )
+INFO: [Synth 8-3886] merging instance 'dd/shift_reg_reg[4]' (FDE) to 'dd/shift_reg_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/shift_reg_reg[5] )
+INFO: [Synth 8-3886] merging instance 'dd/shift_reg_reg[5]' (FDE) to 'dd/shift_reg_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/shift_reg_reg[6] )
+INFO: [Synth 8-3886] merging instance 'dd/shift_reg_reg[6]' (FDE) to 'dd/shift_reg_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/shift_reg_reg[7] )
+INFO: [Synth 8-3886] merging instance 'dd/shift_reg_reg[7]' (FDE) to 'dd/shift_reg_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/shift_reg_reg[8] )
+INFO: [Synth 8-3886] merging instance 'dd/shift_reg_reg[8]' (FDE) to 'dd/shift_reg_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/shift_reg_reg[9] )
+INFO: [Synth 8-3886] merging instance 'dd/bcd_one_reg[0]' (FDRE) to 'dd/bcd_one_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/bcd0_reg[0] )
+INFO: [Synth 8-3886] merging instance 'dd/shift_reg_reg[9]' (FDE) to 'dd/shift_reg_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/shift_reg_reg[10] )
+INFO: [Synth 8-3886] merging instance 'dd/bcd_one_reg[1]' (FDRE) to 'dd/bcd_one_reg[2]'
+INFO: [Synth 8-3886] merging instance 'dd/bcd0_reg[0]' (FDE) to 'dd/bcd0_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/bcd0_reg[1] )
+INFO: [Synth 8-3886] merging instance 'dd/shift_reg_reg[10]' (FDE) to 'dd/shift_reg_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/shift_reg_reg[11] )
+INFO: [Synth 8-3886] merging instance 'dd/bcd_one_reg[2]' (FDRE) to 'dd/bcd_one_reg[3]'
+INFO: [Synth 8-3886] merging instance 'dd/bcd0_reg[1]' (FDE) to 'dd/bcd0_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/bcd0_reg[2] )
+INFO: [Synth 8-3886] merging instance 'dd/shift_reg_reg[11]' (FDE) to 'dd/shift_reg_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/shift_reg_reg[12] )
+INFO: [Synth 8-3886] merging instance 'dd/bcd_one_reg[3]' (FDRE) to 'dd/bcd_ten_reg[0]'
+INFO: [Synth 8-3886] merging instance 'dd/bcd0_reg[2]' (FDE) to 'dd/bcd0_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/bcd0_reg[3] )
+INFO: [Synth 8-3886] merging instance 'dd/shift_reg_reg[12]' (FDE) to 'dd/shift_reg_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/shift_reg_reg[13] )
+INFO: [Synth 8-3886] merging instance 'dd/bcd_ten_reg[0]' (FDRE) to 'dd/bcd_ten_reg[1]'
+INFO: [Synth 8-3886] merging instance 'dd/bcd0_reg[3]' (FDE) to 'dd/bcd1_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/bcd1_reg[0] )
+INFO: [Synth 8-3886] merging instance 'dd/shift_reg_reg[13]' (FDE) to 'dd/shift_reg_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/shift_reg_reg[14] )
+INFO: [Synth 8-3886] merging instance 'dd/bcd_ten_reg[1]' (FDRE) to 'dd/bcd_ten_reg[2]'
+INFO: [Synth 8-3886] merging instance 'dd/bcd1_reg[0]' (FDE) to 'dd/bcd1_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/bcd1_reg[1] )
+INFO: [Synth 8-3886] merging instance 'dd/shift_reg_reg[14]' (FDE) to 'dd/shift_reg_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/shift_reg_reg[15] )
+INFO: [Synth 8-3886] merging instance 'dd/bcd_ten_reg[2]' (FDRE) to 'dd/bcd_ten_reg[3]'
+INFO: [Synth 8-3886] merging instance 'dd/bcd1_reg[1]' (FDE) to 'dd/bcd1_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/bcd1_reg[2] )
+INFO: [Synth 8-3886] merging instance 'dd/shift_reg_reg[15]' (FDE) to 'dd/shift_reg_reg[16]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/shift_reg_reg[16] )
+INFO: [Synth 8-3886] merging instance 'dd/bcd_ten_reg[3]' (FDRE) to 'dd/bcd_hun_reg[0]'
+INFO: [Synth 8-3886] merging instance 'dd/bcd1_reg[2]' (FDE) to 'dd/bcd1_reg[3]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/bcd1_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/shift_reg_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/bcd2_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/shift_reg_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/bcd2_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/shift_reg_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/bcd2_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dd/bcd2_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (gcd_m/gcd_reg[2]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (dd/shift_reg_reg[19]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (tx/char_reg[3]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (tx/char_reg[2]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (tx/char_reg[1]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (tx/char_reg[0]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (uart_m/t_x/charReg_reg[3]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (uart_m/t_x/charReg_reg[2]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (uart_m/t_x/charReg_reg[1]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (uart_m/t_x/charReg_reg[0]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (dd/bin_reg[7]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (dd/bcd_hun_reg[3]) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (dd/bcd2_reg[3]) is unused and will be removed from module bzz3top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 814.305 ; gain = 495.117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 814.305 ; gain = 495.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 826.875 ; gain = 507.688
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (uart_m/t_x/ready_reg) is unused and will be removed from module bzz3top.
+WARNING: [Synth 8-3332] Sequential element (dd/ready_reg) is unused and will be removed from module bzz3top.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 827.922 ; gain = 508.734
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 827.922 ; gain = 508.734
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 827.922 ; gain = 508.734
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 827.922 ; gain = 508.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 827.922 ; gain = 508.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 827.922 ; gain = 508.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 827.922 ; gain = 508.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     2|
+|3     |LUT2 |     3|
+|4     |LUT3 |     5|
+|5     |LUT4 |     8|
+|6     |LUT5 |     7|
+|7     |LUT6 |    19|
+|8     |FDRE |    36|
+|9     |FDSE |     4|
+|10    |IBUF |     3|
+|11    |OBUF |     1|
++------+-----+------+
+
+Report Instance Areas: 
++------+--------------+------------+------+
+|      |Instance      |Module      |Cells |
++------+--------------+------------+------+
+|1     |top           |            |    89|
+|2     |  clk_divider |clock_div   |    28|
+|3     |  rx          |receiver    |     8|
+|4     |  tx          |transmitter |    12|
+|5     |  uart_m      |uart        |    36|
+|6     |    r_x       |uart_rx     |    20|
+|7     |    t_x       |uart_tx     |    16|
++------+--------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 827.922 ; gain = 508.734
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 80 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 827.922 ; gain = 165.793
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 827.922 ; gain = 508.734
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+215 Infos, 87 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 827.922 ; gain = 521.770
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/git/final-proj-bzz3/bzz3finalproj/bzz3finalproj.runs/synth_1/bzz3top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bzz3top_utilization_synth.rpt -pb bzz3top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 827.922 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu May  6 00:00:52 2021...
